@@ -1,0 +1,21 @@
+function setup() {
+    createCanvas(windowWidth, windowHeight);
+    background(255);
+    noFill();
+};
+
+
+function draw() {
+    randomSeed(69);
+    for (var i = 0; i < windowWidth; i += 15) {
+        var r = random(0, 255);
+				if (i%2 == 0) {
+            if (mouseX > i - 10 && mouseX < i + 10) { // if the mouseX is +-10 of i, or where the line starts
+                r = (255);
+            };
+        };
+        stroke(r);
+        bezier(i, 0, i + 35, 115, i - 15, 150, i, windowHeight);
+    };
+    //noLoop();
+};
