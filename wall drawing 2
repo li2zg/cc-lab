@@ -1,0 +1,35 @@
+function setup() {
+  createCanvas(800, 800);
+}
+
+function draw() {
+  background(220);
+
+  fill(100,71,51);
+  noStroke();
+  rect(100,200,200,200);
+  
+  fill(200,146,68);
+  noStroke();
+  quad(300,200,100,200,150,150,350,150);
+  
+  fill(115,112,140);
+  noStroke();
+  quad(300,200,350,150,350,350,300,400);
+  
+  //squre 2
+  fill(random(255),random(255),random(255));
+  noStroke();
+  frameRate(1);
+  rect(550,200,300,200);
+  
+  fill(random(255),random(255),random(255));
+  noStroke();
+  quad(750,200,550,200,600,150,800,150);
+  
+  fill(random(255),random(255),random(255));
+  noStroke();
+  quad(750,200,800,150,800,350,750,400);
+
+
+}
